@@ -1,8 +1,9 @@
+
 :root {
-    --blue: #0f6fff;
-    --deep: #0046b8;
-    --muted: #68788d;
-    --line: #dfe7f1;
+    --blue: #222222;
+    --deep: #111111;
+    --muted: #666666;
+    --line: #dddddd;
 }
 
 * {
@@ -16,31 +17,32 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: #dce8f8;
+    background: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
-    color: #18253b;
+    color: #222222;
 }
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 .phone {
     width: min(100%, 420px);
     min-height: 100vh;
     margin: 0 auto;
-    background: linear-gradient(180deg, #f7fbff, #eef6ff 50%, #f7faff);
-    box-shadow: 0 22px 45px rgba(28, 47, 84, .13);
+    background: #ffffff;
+    border: 1px solid #dddddd;
     overflow: hidden;
 }
 
 .hero {
+    position: relative;
     min-height: 245px;
     padding: 30px 25px 58px;
-    background: linear-gradient(135deg, #2f73ff, #0964e8, #0046b8);
-    color: #fff;
-    border-radius: 0 0 35px 35px;
-    position: relative;
+    background: #f2f2f2;
+    color: #222222;
+    border-bottom: 1px solid #dddddd;
 }
 
 .landing-hero {
@@ -49,54 +51,53 @@ a {
 
 .hero h1 {
     font-size: 29px;
-    line-height: 1.18;
+    line-height: 1.2;
     margin: 10px 0;
-    letter-spacing: -.6px;
 }
 
 .hero p {
     font-size: 13px;
     line-height: 1.6;
-    color: #e0efff;
-    max-width: 325px;
+    color: #555555;
 }
 
 .eyebrow {
     font-size: 10px;
-    font-weight: 800;
+    font-weight: bold;
     letter-spacing: 1.4px;
-    color: #b9d8ff;
-}
-
-.feature-strip {
-    margin-top: 24px;
-    display: flex;
-    gap: 9px;
-}
-
-.feature-strip span {
-    flex: 1;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, .15);
-    padding: 16px 8px;
-    text-align: center;
-    font-size: 11px;
-    font-weight: 750;
+    color: #666666;
 }
 
 .brand-pill {
     float: right;
     padding: 7px 11px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, .17);
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background: #ffffff;
     font-size: 10px;
     font-weight: bold;
 }
 
 .back {
-    color: #fff;
-    text-decoration: none;
+    color: #222222;
     font-size: 12px;
+    font-weight: bold;
+}
+
+.feature-strip {
+    display: flex;
+    gap: 9px;
+    margin-top: 24px;
+}
+
+.feature-strip span {
+    flex: 1;
+    padding: 16px 8px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -110,19 +111,20 @@ a {
 }
 
 .card {
-    background: #fff;
     padding: 23px 19px;
-    border-radius: 25px;
-    box-shadow: 0 18px 36px rgba(28, 47, 84, .12);
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
 }
 
 .card h2 {
-    font-size: 20px;
     margin: 0 0 9px;
+    font-size: 20px;
 }
 
 .card p {
-    color: var(--muted);
+    color: #666666;
     font-size: 12px;
     line-height: 1.6;
 }
@@ -145,58 +147,58 @@ a {
 
 .role-card {
     position: relative;
-    border: 1px solid var(--line);
-    border-radius: 18px;
     padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background: #ffffff;
     cursor: pointer;
-    font-weight: 800;
     font-size: 13px;
-    color: #2964c8;
+    font-weight: bold;
 }
 
 .role-card:has(input:checked) {
-    background: #eff7ff;
-    border-color: var(--blue);
+    background: #eeeeee;
+    border: 2px solid #333333;
 }
 
 .role-card input {
     position: absolute;
-    right: 9px;
     top: 10px;
-    accent-color: var(--blue);
+    right: 9px;
+    accent-color: #333333;
 }
 
 .role-card small {
     display: block;
-    color: var(--muted);
-    font-size: 10px;
     margin-top: 5px;
+    color: #666666;
+    font-size: 10px;
     font-weight: normal;
 }
 
 label {
     display: block;
     font-size: 12px;
-    font-weight: 750;
+    font-weight: bold;
 }
 
 label input:not([type="radio"]) {
-    margin-top: 8px;
     width: 100%;
     height: 45px;
-    border: 1px solid var(--line);
-    background: #fff;
-    border-radius: 13px;
+    margin-top: 8px;
     padding: 0 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #222222;
     font: inherit;
     font-size: 12px;
-    color: #24374a;
-    outline: 0;
+    outline: none;
 }
 
 label input:focus {
-    border-color: var(--blue);
-    box-shadow: 0 0 0 3px rgba(15, 111, 255, .08);
+    border-color: #333333;
+    box-shadow: 0 0 0 2px #eeeeee;
 }
 
 .role-fields {
@@ -210,9 +212,9 @@ label input:focus {
 }
 
 .password-wrap {
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .password-wrap input {
@@ -221,47 +223,50 @@ label input:focus {
 
 .eye {
     position: absolute;
-    right: 8px;
     top: 13px;
-    border: 0;
+    right: 8px;
+    border: none;
     background: transparent;
-    color: var(--blue);
-    font-weight: bold;
+    color: #444444;
     font-size: 11px;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .btn {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 47px;
-    border-radius: 14px;
-    border: 0;
     padding: 12px;
+    border: 1px solid #333333;
+    border-radius: 8px;
     text-align: center;
     font-size: 12px;
-    font-weight: 800;
-    text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .btn-primary {
-    color: white;
-    background: linear-gradient(90deg, #0f7bff, #0059dc);
-    box-shadow: 0 12px 25px rgba(15, 111, 255, .24);
+    color: #ffffff;
+    background: #222222;
+}
+
+.btn-primary:hover {
+    background: #444444;
 }
 
 .btn-yellow {
-    color: #163053;
-    background: linear-gradient(90deg, #ffcf37, #ffad1f);
+    color: #222222;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
 }
 
 .btn-outline {
-    border: 1px solid var(--blue);
-    background: white;
-    color: var(--blue);
+    color: #222222;
+    background: #ffffff;
+    border: 1px solid #555555;
 }
 
 .text-center {
@@ -270,45 +275,41 @@ label input:focus {
 
 .switch {
     padding: 16px 0;
+    color: #666666;
     text-align: center;
     font-size: 12px;
-    color: var(--muted);
 }
 
 .switch a {
-    text-decoration: none;
-    color: var(--blue);
-    font-weight: 800;
+    color: #222222;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .alert {
-    border-radius: 13px;
-    padding: 12px 13px;
     margin: 12px 0;
+    padding: 12px 13px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background: #f5f5f5;
     font-size: 12px;
     line-height: 1.5;
 }
 
-.success {
-    color: #167650;
-    background: #eafbf0;
-}
-
-.danger {
-    color: #b42338;
-    background: #ffeff1;
-}
-
+.success,
+.danger,
 .info {
-    color: #1c5ca5;
-    background: #eaf4ff;
+    color: #333333;
+    background: #f5f5f5;
+    border: 1px solid #cccccc;
 }
 
 .hint {
-    background: #f0f6ff;
-    color: #3567a3;
     padding: 13px;
-    border-radius: 13px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #555555;
     text-align: center;
     font-size: 11px;
 }
@@ -316,14 +317,14 @@ label input:focus {
 .detail {
     display: flex;
     justify-content: space-between;
-    padding: 13px 0;
-    border-bottom: 1px solid #edf0f5;
     gap: 8px;
+    padding: 13px 0;
+    border-bottom: 1px solid #dddddd;
     font-size: 12px;
 }
 
 .detail span {
-    color: var(--muted);
+    color: #666666;
 }
 
 .menu-grid {
@@ -335,32 +336,31 @@ label input:focus {
 
 .menu-link {
     padding: 13px 7px;
-    background: #f0f6ff;
-    border: 1px solid #e1eeff;
-    color: #235fbc;
-    font-size: 11px;
-    border-radius: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #333333;
     text-align: center;
-    text-decoration: none;
-    font-weight: 800;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .menu-link.current {
-    background: #1769e8;
-    color: white;
+    background: #333333;
+    color: #ffffff;
 }
 
 .demo-footer {
     padding: 0 20px 20px;
-    font-size: 10px;
-    color: #8391a6;
+    color: #777777;
     text-align: center;
+    font-size: 10px;
 }
 
-@media (min-width:500px) {
+@media (min-width: 500px) {
     .phone {
         min-height: calc(100vh - 32px);
         margin: 16px auto;
-        border-radius: 22px;
+        border-radius: 12px;
     }
 }
