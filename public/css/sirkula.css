@@ -1,0 +1,366 @@
+:root {
+    --blue: #0f6fff;
+    --deep: #0046b8;
+    --muted: #68788d;
+    --line: #dfe7f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #dce8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #18253b;
+}
+
+a {
+    color: inherit;
+}
+
+.phone {
+    width: min(100%, 420px);
+    min-height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #f7fbff, #eef6ff 50%, #f7faff);
+    box-shadow: 0 22px 45px rgba(28, 47, 84, .13);
+    overflow: hidden;
+}
+
+.hero {
+    min-height: 245px;
+    padding: 30px 25px 58px;
+    background: linear-gradient(135deg, #2f73ff, #0964e8, #0046b8);
+    color: #fff;
+    border-radius: 0 0 35px 35px;
+    position: relative;
+}
+
+.landing-hero {
+    min-height: 325px;
+}
+
+.hero h1 {
+    font-size: 29px;
+    line-height: 1.18;
+    margin: 10px 0;
+    letter-spacing: -.6px;
+}
+
+.hero p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #e0efff;
+    max-width: 325px;
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    color: #b9d8ff;
+}
+
+.feature-strip {
+    margin-top: 24px;
+    display: flex;
+    gap: 9px;
+}
+
+.feature-strip span {
+    flex: 1;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .15);
+    padding: 16px 8px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 750;
+}
+
+.brand-pill {
+    float: right;
+    padding: 7px 11px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .17);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.back {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.body-content {
+    padding: 0 21px 30px;
+}
+
+.overlap {
+    position: relative;
+    margin-top: -30px;
+}
+
+.card {
+    background: #fff;
+    padding: 23px 19px;
+    border-radius: 25px;
+    box-shadow: 0 18px 36px rgba(28, 47, 84, .12);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 0 0 9px;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top-space {
+    margin-top: 21px !important;
+}
+
+.role-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.role-card {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 13px;
+    color: #2964c8;
+}
+
+.role-card:has(input:checked) {
+    background: #eff7ff;
+    border-color: var(--blue);
+}
+
+.role-card input {
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    accent-color: var(--blue);
+}
+
+.role-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+label input:not([type="radio"]) {
+    margin-top: 8px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 13px;
+    padding: 0 12px;
+    font: inherit;
+    font-size: 12px;
+    color: #24374a;
+    outline: 0;
+}
+
+label input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(15, 111, 255, .08);
+}
+
+.role-fields {
+    gap: 14px;
+}
+
+.inline-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+}
+
+.password-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-wrap input {
+    padding-right: 60px !important;
+}
+
+.eye {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    border: 0;
+    background: transparent;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 47px;
+    border-radius: 14px;
+    border: 0;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background: linear-gradient(90deg, #0f7bff, #0059dc);
+    box-shadow: 0 12px 25px rgba(15, 111, 255, .24);
+}
+
+.btn-yellow {
+    color: #163053;
+    background: linear-gradient(90deg, #ffcf37, #ffad1f);
+}
+
+.btn-outline {
+    border: 1px solid var(--blue);
+    background: white;
+    color: var(--blue);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.switch {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.switch a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.alert {
+    border-radius: 13px;
+    padding: 12px 13px;
+    margin: 12px 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.success {
+    color: #167650;
+    background: #eafbf0;
+}
+
+.danger {
+    color: #b42338;
+    background: #ffeff1;
+}
+
+.info {
+    color: #1c5ca5;
+    background: #eaf4ff;
+}
+
+.hint {
+    background: #f0f6ff;
+    color: #3567a3;
+    padding: 13px;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf0f5;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.detail span {
+    color: var(--muted);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.menu-link {
+    padding: 13px 7px;
+    background: #f0f6ff;
+    border: 1px solid #e1eeff;
+    color: #235fbc;
+    font-size: 11px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.menu-link.current {
+    background: #1769e8;
+    color: white;
+}
+
+.demo-footer {
+    padding: 0 20px 20px;
+    font-size: 10px;
+    color: #8391a6;
+    text-align: center;
+}
+
+@media (min-width:500px) {
+    .phone {
+        min-height: calc(100vh - 32px);
+        margin: 16px auto;
+        border-radius: 22px;
+    }
+}
